@@ -53,10 +53,10 @@ const portfolioData = {
         {
             title: "Technorian",
             description: "Been a volunteer for Technorian organized by ARC",
-            image: "assets/project_3.png",
-            tech: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
-            githubLink: "#"
+            image: "assets/images.png",
+            //tech: ["HTML5", "CSS3", "JavaScript"],
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Food Delivery Platform",
