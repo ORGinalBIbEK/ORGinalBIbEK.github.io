@@ -88,9 +88,10 @@ const portfolioData = {
             icon: "fas fa-paint-brush"
         },
         {
-            title: "API Development",
-            description: "Designing robust and secure RESTful APIs to power your frontend applications.",
-            icon: "fas fa-network-wired"
+            title: "Machine Learning",
+            description: "Learning and implementing machine learning algorithms to solve complex problems and exploratory data analysis",
+            icon: "fas fa-brain"
+
         },
         {
             title: "Database Management",
