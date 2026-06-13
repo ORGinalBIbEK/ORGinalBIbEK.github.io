@@ -1,6 +1,6 @@
 /* style.css - Custom styling and animations extending Tailwind */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;500;600;700;800&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,11 +10,14 @@ html {
     --theme-text: #0c060c;
     --theme-accent: #6d6da3;
     --theme-soft: #b766e3;
+    height: 100%;
 }
 
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    position: relative; /* Context anchor for absolute blobs */
+    min-height: 100%;
     background: linear-gradient(135deg, var(--theme-bg), var(--theme-soft));
     color: var(--theme-text);
 }
@@ -124,11 +127,6 @@ body {
     width: 100%;
 }
 
-/* Testimonial Slider Transitions */
-.testimonial-slide {
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
 /* Palette card styles */
 .palette-card {
     background: rgba(255, 255, 255, 0.85);
@@ -146,6 +144,7 @@ body {
     z-index: -1;
     opacity: 0.5;
     animation: float 10s ease-in-out infinite;
+    pointer-events: none; /* Stops blank interaction gaps */
 }
 
 @keyframes float {
@@ -155,7 +154,7 @@ body {
 }
 
 .blob-1 {
-    top: -10%;
+    top: -5%;
     left: -10%;
     width: 500px;
     height: 500px;
@@ -164,8 +163,8 @@ body {
 }
 
 .blob-2 {
-    bottom: -10%;
-    right: -10%;
+    bottom: 0;       /* Align cleanly to bottom baseline */
+    right: -5%;      /* Keeps it positioned outward slightly */
     width: 400px;
     height: 400px;
     background: rgba(133, 79, 92, 0.25);
