@@ -7,10 +7,8 @@
 
     <title>Portfolio | Web Developer</title>
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Tailwind Config for Custom Colors/Fonts -->
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -27,34 +25,26 @@
                         soft: '#fbe4d8',
                  }
                 }
-            }//changheeee
-            //change2
-            ///khatra feature
+            }
         }
     </script>
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-gray-900 dark:bg-darkBg dark:text-gray-100 transition-colors duration-300 relative">
 
-    <!-- Decorative Background Blobs -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-white/80 dark:bg-darkBg/80 border-b border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="text-2xl font-extrabold text-gradient tracking-tight">Portfolio.</a>
                 </div>
                 
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="nav-link font-medium hover:text-primary transition-colors">Home</a>
                     <a href="#about" class="nav-link font-medium hover:text-primary transition-colors">About</a>
@@ -63,13 +53,11 @@
                     <a href="#timeline" class="nav-link font-medium hover:text-primary transition-colors">Experience</a>
                     <a href="#contact" class="nav-link font-medium hover:text-primary transition-colors">Contact</a>
                     
-                    <!-- Theme Toggle -->
                     <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
                         <i id="theme-icon" class="fas fa-moon text-lg"></i>
                     </button>
                 </div>
 
-                <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center gap-4">
                     <button id="theme-toggle-mobile" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors">
                         <i class="fas fa-moon"></i>
@@ -81,7 +69,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-darkBg border-b border-gray-200 dark:border-gray-800">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#home" class="block px-3 py-2 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md">Home</a>
@@ -93,11 +80,9 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-                <!-- Text Content -->
                 <div class="md:w-1/2 text-center md:text-left reveal">
                     <p class="text-lg text-primary font-semibold mb-2">Hello! I am</p>
                     <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-gray-900 dark:text-white">
@@ -119,7 +104,6 @@
                     </div>
                 </div>
                 
-                <!-- Profile Image -->
                 <div class="md:w-1/2 flex justify-center reveal delay-200">
                     <div class="relative w-64 h-64 md:w-96 md:h-96">
                         <div class="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
@@ -130,7 +114,6 @@
         </div>
     </section>
 
-    <!-- Quick Fun Section -->
     <section class="py-12">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="palette-card reveal rounded-3xl p-8 shadow-xl border border-white/70 dark:border-gray-800/70">
@@ -153,7 +136,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -207,7 +189,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -216,19 +197,16 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Frontend -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white"><i class="fas fa-desktop text-primary mr-2"></i> Frontend</h3>
                     <div id="frontend-skills" class="grid grid-cols-2 gap-4"></div>
                 </div>
                 
-                <!-- Backend -->
                 <div class="reveal delay-100">
                     <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white"><i class="fas fa-server text-primary mr-2"></i> Backend</h3>
                     <div id="backend-skills" class="grid grid-cols-2 gap-4"></div>
                 </div>
 
-                <!-- Tools -->
                 <div class="reveal delay-200">
                     <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white"><i class="fas fa-tools text-primary mr-2"></i> Tools</h3>
                     <div id="tools-skills" class="grid grid-cols-2 gap-4"></div>
@@ -237,7 +215,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -246,12 +223,10 @@
             </div>
             
             <div id="services-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
-                <!-- Injected via JS -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -261,12 +236,10 @@
             </div>
 
             <div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
-                <!-- Injected via JS -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- Timeline / Experience Section -->
     <section id="timeline" class="py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -275,7 +248,6 @@
             </div>
 
             <div class="relative border-l-4 border-gray-200 dark:border-gray-700 ml-3 md:ml-0 reveal">
-                <!-- Item 1 -->
                 <div class="mb-10 ml-8 timeline-item relative">
                     <div class="absolute -left-10 w-5 h-5 bg-gray-200 dark:bg-gray-700 rounded-full border-4 border-white dark:border-darkBg timeline-dot mt-1.5"></div>
                     <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-3 inline-block">2025 - Present</span>
@@ -284,7 +256,6 @@
                     <p class="text-gray-600 dark:text-gray-400 text-sm">Second Semester Student </p>
                 </div>
                 
-                <!-- Item 2 -->
                 <div class="mb-10 ml-8 timeline-item relative">
                     <div class="absolute -left-10 w-5 h-5 bg-gray-200 dark:bg-gray-700 rounded-full border-4 border-white dark:border-darkBg timeline-dot mt-1.5"></div>
                     <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-3 inline-block">2023 - 2025</span>
@@ -293,7 +264,6 @@
                     <p class="text-gray-600 dark:text-gray-400 text-sm">Completed my Higher Secondary Education with a Gpa of 3.81</p>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="ml-8 timeline-item relative">
                     <div class="absolute -left-10 w-5 h-5 bg-gray-200 dark:bg-gray-700 rounded-full border-4 border-white dark:border-darkBg timeline-dot mt-1.5"></div>
                     <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold  rounded-full mb-3 inline-block">2023</span>
@@ -305,35 +275,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-24 overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Client <span class="text-primary">Testimonials</span></h2>
-                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-            </div>
-
-            <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 shadow-xl border border-gray-100 dark:border-gray-700 reveal">
-                <i class="fas fa-quote-left text-6xl absolute top-4 left-4 text-gray-100 dark:text-gray-700 opacity-50"></i>
-                
-                <div id="testimonial-slider" class="relative z-10 flex overflow-hidden">
-                    <!-- Injected via JS -->
-                </div>
-
-                <!-- Controls -->
-                <div class="flex justify-center gap-4 mt-8">
-                    <button id="prev-testimonial" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors focus:outline-none">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button id="next-testimonial" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors focus:outline-none">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -343,7 +284,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto reveal">
-                <!-- Contact Info -->
                 <div>
                     <h3 class="text-2xl font-bold mb-6 dark:text-white">Contact Information</h3>
                     <div class="space-y-6">
@@ -390,7 +330,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700">
                     <form action="#" method="POST">
                         <div class="mb-6">
@@ -414,7 +353,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -435,11 +373,12 @@
                 <p>&copy; 2026 Bibek Maharjan. All rights reserved.</p>
             </div>
         </div>
-    </footer>    <!-- Back to Top Button -->
+    </footer>
+
     <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg hidden items-center justify-center hover:bg-[#854f5c] hover:-translate-y-1 transition-all focus:outline-none z-50">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <!-- Scripts -->
+
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
