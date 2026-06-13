@@ -27,52 +27,52 @@ const portfolioData = {
     
     projects: [
         {
-            title: "Softwatre Development Workshop",
-            description: "",
-            image: "assets/project_1.png",
+            title: "Software Fellowship Program",
+            description: "4 days intensive workshop on software development,covering frontend,backend and deployment",
+            image: "assets/softwarefellowship.png",
             tech: ["React", "Tailwind", "Chart.js"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Crypto Tracker Pro",
             description: "Real-time cryptocurrency tracking application with market analysis and portfolio management.",
             image: "assets/project_2.png",
             tech: ["JavaScript", "CoinGecko API", "CSS3"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Health & Fitness App",
             description: "A wellness application focusing on workout tracking, diet planning, and progress monitoring.",
             image: "assets/project_3.png",
             tech: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Food Delivery Platform",
             description: "A modern food delivery UI with seamless ordering experience and restaurant listings.",
             image: "assets/project_4.png",
             tech: ["React", "Tailwind", "Firebase"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Luxury Real Estate",
             description: "Premium property listing website featuring high-end homes and virtual tours.",
             image: "assets/project_5.png",
             tech: ["Next.js", "Tailwind", "MongoDB"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         },
         {
             title: "Travel Booking Hub",
             description: "An inspiring travel booking application for exploring and reserving dream destinations.",
             image: "assets/project_6.png",
             tech: ["Vue.js", "Tailwind", "Stripe"],
-            liveLink: "#",
-            githubLink: "#"
+            //liveLink: "#",
+            //githubLink: "#"
         }
     ],
 
