@@ -60,8 +60,8 @@ const portfolioData = {
         },
         {
             title: "AI Resume Builder",
-            description: "A modern food delivery UI with seamless ordering experience and restaurant listings.",
-            image: "assets/project_4.png",
+            description: "An AI-powered resume builder that generates professional resume based on user input.",
+            image: "assets/original-161c7cc4182d64d0c75555f686d780cc.webp",
             tech: ["React", "Tailwind", "Vercel"],
             liveLink: "#",
             githubLink: "https://github.com/ORGinalBIbEK/resume_builder"
