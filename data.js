@@ -48,7 +48,7 @@ const portfolioData = {
             image: "assets/What-is-MIS.webp",
             tech: ["C","SQL"],
             liveLink: "#",
-            githubLink: "#"
+            githubLink: "https://github.com/ORGinalBIbEK/C-project-MIS-"
         },
         {
             title: "Technorian",
