@@ -59,12 +59,12 @@ const portfolioData = {
             //githubLink: "#"
         },
         {
-            title: "Food Delivery Platform",
+            title: "AI Resume Builder",
             description: "A modern food delivery UI with seamless ordering experience and restaurant listings.",
             image: "assets/project_4.png",
-            tech: ["React", "Tailwind", "Firebase"],
+            tech: ["React", "Tailwind", "Vercel"],
             liveLink: "#",
-            githubLink: "#"
+            githubLink: "https://github.com/ORGinalBIbEK/resume_builder"
         }
 
     ],
