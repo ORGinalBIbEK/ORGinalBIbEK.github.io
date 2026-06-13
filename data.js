@@ -35,12 +35,12 @@ const portfolioData = {
             //githubLink: "#"
         },
         {
-            title: "Crypto Tracker Pro",
-            description: "Real-time cryptocurrency tracking application with market analysis and portfolio management.",
-            image: "assets/project_2.png",
-            tech: ["JavaScript", "CoinGecko API", "CSS3"],
+            title: "Movie App",
+            description: "A simple movie browsing application with search and filterring capabilities.",
+            image: "assets/1_t98V5s6uNKVNEde5ZYQemw.jpg",
+            tech: ["JavaScript", "React", "Tailwind"],
             liveLink: "#",
-            githubLink: "#"
+            githubLink: "https://github.com/ORGinalBIbEK/movie_app"
         },
         {
             title: "Health & Fitness App",
