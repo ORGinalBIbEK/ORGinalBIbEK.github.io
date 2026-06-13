@@ -27,8 +27,8 @@ const portfolioData = {
     
     projects: [
         {
-            title: "SaaS Analytics Dashboard",
-            description: "A comprehensive analytics dashboard for SaaS businesses with real-time data visualization.",
+            title: "Softwatre Development Workshop",
+            description: "",
             image: "assets/project_1.png",
             tech: ["React", "Tailwind", "Chart.js"],
             liveLink: "#",
