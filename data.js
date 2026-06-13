@@ -30,7 +30,7 @@ const portfolioData = {
             title: "Software Fellowship Program",
             description: "4 days intensive workshop on software development,covering frontend,backend and deployment",
             image: "assets/softwarefellowship.png",
-            tech: ["React", "Tailwind", "Chart.js"],
+            tech: ["HTML", "JavaScript", "Git","Github","Deployment"],
             //liveLink: "#",
             //githubLink: "#"
         },
