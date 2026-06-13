@@ -92,12 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSkills('tools', 'tools-skills');
 
     // Inject Projects
-    const projectsContainer = document.getElementById('projects-container');
-    if(projectsContainer) {
-        portfolioData.projects.forEach(project => {
-            const techHTML = project.tech.map(t => `<span class="px-2 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs rounded-full">${t}</span>`).join('');
-            const projectHTML = `
-                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700">
+const projectsContainer = document.getElementById('projects-container');
+
+if(projectsContainer) {
+    let allProjectsHTML = ''; // Create a placeholder string to hold all the cards
+    
+    portfolioData.projects.forEach(project => {
+        const techHTML = project.tech.map(t => `<span class="px-2 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs rounded-full">${t}</span>`).join('');
+        
+        // Conditional Check: Only create HTML if the link exists
+        const liveLinkHTML = project.liveLink 
+            ? `<a href="${project.liveLink}" class="text-[#522b5b] dark:text-[#dfb6b2] hover:underline font-medium"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>` 
+            : '';
+
+        const githubLinkHTML = project.githubLink 
+            ? `<a href="${project.githubLink}" class="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white font-medium"><i class="fab fa-github mr-1"></i> Code</a>` 
+            : '';
+
+        const projectHTML = `
+            <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                <div>
                     <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">${project.title}</h3>
@@ -105,16 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="flex flex-wrap gap-2 mb-4">
                             ${techHTML}
                         </div>
-                        <div class="flex justify-between mt-auto">
-                            <a href="${project.liveLink}" class="text-[#522b5b] dark:text-[#dfb6b2] hover:underline font-medium"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
-                            <a href="${project.githubLink}" class="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white font-medium"><i class="fab fa-github mr-1"></i> Code</a>
-                        </div>
                     </div>
                 </div>
-            `;
-            projectsContainer.insertAdjacentHTML('beforeend', projectHTML);
-        });
-    }
+                <div class="p-6 pt-0 flex justify-between items-center mt-auto">
+                    ${liveLinkHTML}
+                    ${githubLinkHTML}
+                </div>
+            </div>
+        `;
+        
+        allProjectsHTML += projectHTML;
+    });
+
+    // Inject everything into the DOM at once
+    projectsContainer.innerHTML = allProjectsHTML;
+}
 
     // Inject Services
     const servicesContainer = document.getElementById('services-container');

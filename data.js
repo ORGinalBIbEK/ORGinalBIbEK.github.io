@@ -39,40 +39,40 @@ const portfolioData = {
             description: "Real-time cryptocurrency tracking application with market analysis and portfolio management.",
             image: "assets/project_2.png",
             tech: ["JavaScript", "CoinGecko API", "CSS3"],
-            //liveLink: "#",
-            //githubLink: "#"
+            liveLink: "#",
+            githubLink: "#"
         },
         {
             title: "Health & Fitness App",
             description: "A wellness application focusing on workout tracking, diet planning, and progress monitoring.",
             image: "assets/project_3.png",
             tech: ["HTML5", "CSS3", "JavaScript"],
-            //liveLink: "#",
-            //githubLink: "#"
+            liveLink: "#",
+            githubLink: "#"
         },
         {
             title: "Food Delivery Platform",
             description: "A modern food delivery UI with seamless ordering experience and restaurant listings.",
             image: "assets/project_4.png",
             tech: ["React", "Tailwind", "Firebase"],
-            //liveLink: "#",
-            //githubLink: "#"
+            liveLink: "#",
+            githubLink: "#"
         },
         {
             title: "Luxury Real Estate",
             description: "Premium property listing website featuring high-end homes and virtual tours.",
             image: "assets/project_5.png",
             tech: ["Next.js", "Tailwind", "MongoDB"],
-            //liveLink: "#",
-            //githubLink: "#"
+            liveLink: "#",
+            githubLink: "#"
         },
         {
             title: "Travel Booking Hub",
             description: "An inspiring travel booking application for exploring and reserving dream destinations.",
             image: "assets/project_6.png",
             tech: ["Vue.js", "Tailwind", "Stripe"],
-            //liveLink: "#",
-            //githubLink: "#"
+            liveLink: "#",
+            githubLink: "#"
         }
     ],
 
@@ -99,25 +99,4 @@ const portfolioData = {
             icon: "fas fa-database"
         }
     ],
-
-    testimonials: [
-        {
-            name: "Sarah Johnson",
-            role: "CEO at TechStart",
-            text: "Working with this developer was a game-changer for our startup. The attention to detail and clean code practices are unmatched. Highly recommended!",
-            image: "https://i.pravatar.cc/150?img=1"
-        },
-        {
-            name: "Michael Chen",
-            role: "Product Manager",
-            text: "Delivered our complex dashboard project ahead of schedule. The UI/UX improvements they suggested increased our user engagement significantly.",
-            image: "https://i.pravatar.cc/150?img=11"
-        },
-        {
-            name: "Emma Williams",
-            role: "Design Lead",
-            text: "A rare breed of developer who truly understands design. The pixel-perfect implementation of our Figma files was impressive.",
-            image: "https://i.pravatar.cc/150?img=5"
-        }
-    ]
 };
