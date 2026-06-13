@@ -12,6 +12,7 @@ const portfolioData = {
         backend: [
             { name: "Node.js", icon: "fab fa-node-js", color: "text-green-500" },
             { name: "Express", icon: "fas fa-server", color: "text-gray-400" },
+            { name: "FastAPI", icon: "fas fa-bolt", color: "text-teal-500" },
             { name: "MongoDB", icon: "fas fa-database", color: "text-green-600" },
             { name: "Python", icon: "fab fa-python", color: "text-blue-400" }
         ],
@@ -19,6 +20,7 @@ const portfolioData = {
             { name: "Git", icon: "fab fa-git-alt", color: "text-red-500" },
             { name: "GitHub", icon: "fab fa-github", color: "text-gray-800 dark:text-white" },
             { name: "Figma", icon: "fab fa-figma", color: "text-purple-500" },
+           { name: "Adobe Photoshop", icon: "fas fa-palette", color: "text-blue-600" },
             { name: "VS Code", icon: "fas fa-code", color: "text-blue-500" }
         ]
     },
