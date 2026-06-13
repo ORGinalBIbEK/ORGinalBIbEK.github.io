@@ -42,9 +42,17 @@ const portfolioData = {
             liveLink: "#",
             githubLink: "https://github.com/ORGinalBIbEK/movie_app"
         },
+                {
+            title: "Student Management System",
+            description: "A comprehensive system for managing student information and academic records..",
+            image: "assets/What-is-MIS.webp",
+            tech: ["C","SQL"],
+            liveLink: "#",
+            githubLink: "#"
+        },
         {
-            title: "Health & Fitness App",
-            description: "A wellness application focusing on workout tracking, diet planning, and progress monitoring.",
+            title: "Technorian",
+            description: "Been a volunteer for Technorian organized by ARC",
             image: "assets/project_3.png",
             tech: ["HTML5", "CSS3", "JavaScript"],
             liveLink: "#",
@@ -57,23 +65,8 @@ const portfolioData = {
             tech: ["React", "Tailwind", "Firebase"],
             liveLink: "#",
             githubLink: "#"
-        },
-        {
-            title: "Luxury Real Estate",
-            description: "Premium property listing website featuring high-end homes and virtual tours.",
-            image: "assets/project_5.png",
-            tech: ["Next.js", "Tailwind", "MongoDB"],
-            liveLink: "#",
-            githubLink: "#"
-        },
-        {
-            title: "Travel Booking Hub",
-            description: "An inspiring travel booking application for exploring and reserving dream destinations.",
-            image: "assets/project_6.png",
-            tech: ["Vue.js", "Tailwind", "Stripe"],
-            liveLink: "#",
-            githubLink: "#"
         }
+
     ],
 
     services: [
